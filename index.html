@@ -2,55 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/jquery-3.6.1.min.js"  crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"  crossorigin="anonymous"></script>
-    <title>Document</title>
-    <script src="js/tabber.js"></script>
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/popper.min.js"></script>
+    crossorigin="anonymous"></script>
+   <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
 
-<body>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-        <li><a class="nav-link active" data-toggle="tab" href="#menu1">Part 4</a></li>
-        <li><a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a></li>
-        <li><a class="nav-link" data-toggle="tab" href="#menu3">Menu 3</a></li>
+  <script>
+  $(document).ready(function(){
+      $('a[data-bs-toggle="tab"]').on("shown.bs.tab", function(e){
+          var activeTab = $(e.target).text(); // Get the name of active tab
+          var previousTab = $(e.relatedTarget).text(); // Get the name of previous active tab
+          $(".active-tab span").html(activeTab);
+          $(".previous-tab span").html(previousTab);
+      });
+  });
+  </script>
+  </head>
+  <body>
+  <div class="m-4">
+      <ul id="myTab" class="nav nav-tabs">
+          <li class="nav-item">
+              <a href="#home" class="nav-link active" data-bs-toggle="tab">Part 4</a>
+          </li>
+          <li class="nav-item">
+              <a href="#profile" class="nav-link" data-bs-toggle="tab">Profile</a>
+          </li>
+          <li class="nav-item">
+              <a href="#messages" class="nav-link" data-bs-toggle="tab">Messages</a>
+          </li>
       </ul>
-    
       <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <h3>HOME</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-            <h3>Part 4</h3>
-            <p>Module 1 Cost of Capital</p>
-            <ul class="list-group">
-              <li class="list-group-item ">
-                <a href="./corporateissuers.html">Cost of capital</a>
-               </li>
-              <li class="list-group-item">Capital Structure</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-          <h3>Menu 3</h3>
-          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        </div>
-      </div>
-    </div>
+          <div class="tab-pane fade show active" id="home">
+              
+<h3>Part 4</h3>
+<p>Module 1 Cost of Capital</p>
+<a href="./corporateissuers.html">Vocabulary</a>
+<ul class="list-group">
+  <li class="list-group-item ">
 
-</body>
+    Cost of capital </li>
+  <li class="list-group-item">Capital Structure</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+          </div>
+          <div class="tab-pane fade" id="profile">
+              <h4 class="mt-2">Profile tab content</h4>
+          </div>
+          <div class="tab-pane fade" id="messages">
+              <h4 class="mt-2">Messages tab content</h4>
+          </div>
+      </div>
+      <hr>
+  </div>
+  </body>
 
 </html>
+
