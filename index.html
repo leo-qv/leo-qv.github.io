@@ -5,67 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/bootstrap-grid.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/popper.min.js"></script>
-  <script src="./js/jquery-3.6.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/chapterbuilder.js"></script>
+  <script src="./js/chapterDescBuilder.js"></script>
   <title>Document</title>
-
-  <script>
-    $(document).ready(function () {
-      $('a[data-bs-toggle="tab"]').on("shown.bs.tab", function (e) {
-        var activeTab = $(e.target).text(); // Get the name of active tab
-        var previousTab = $(e.relatedTarget).text(); // Get the name of previous active tab
-        $(".active-tab span").html(activeTab);
-        $(".previous-tab span").html(previousTab);
-      });
-    });
-  </script>
+ 
 </head>
 
 <body>
   <div class="m-4">
-    <ul id="myTab" class="nav nav-tabs">
-      <li class="nav-item">
-        <a href="#home" class="nav-link active" data-bs-toggle="tab">Part 4</a>
-      </li>
-      <li class="nav-item">
-        <a href="#profile" class="nav-link" data-bs-toggle="tab">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a href="#messages" class="nav-link" data-bs-toggle="tab">Messages</a>
-      </li>
+    <ul id="chapter-tab" class="nav nav-tabs">
     </ul>
     <div class="tab-content">
-      <div class="tab-pane fade show active" id="home">
-
-        <h3>Part 4</h3>
-        <p>Module 1 Cost of Capital</p>
-        <a href="./corporateissuers.html">Vocabulary</a>
-        <ul class="list-group">
-          <li class="list-group-item ">
-
-            Cost of capital </li>
-          <li class="list-group-item">Capital Structure</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-      </div>
-      <div class="tab-pane fade" id="profile">
-        <h4 class="mt-2">Profile tab content</h4>
-      </div>
-      <div class="tab-pane fade" id="messages">
-        <h4 class="mt-2">Messages tab content</h4>
-      </div>
     </div>
-    <hr>
+
+    <div class="row">
+      <div class="col-sm-6 chapter-card-container">
+    
+ 
   </div>
+    </div>
 </body>
 
 </html>
 
-https://analystnotes.com/cfa-exam-2022.html
-https://ift.world/booklets/corporate-finance-cost-of-capital-part1/
+
+<div hidden>
+  https://analystnotes.com/cfa-exam-2022.html
+  https://ift.world/booklets/corporate-finance-cost-of-capital-part1/
+  https://analystprep.com/cfa-level-1-exam/corporate-issuers/learning-sessions-curriculum-corporate-finance/
+  https://ift.world/booklets/corporate-finance-corporate-governance-and-esg-part1/
+</div>

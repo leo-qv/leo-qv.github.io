@@ -1,0 +1,20 @@
+[
+  {
+    "unit": 4,
+    "Title": "Corporate Borrowers",
+    "Type": "Portfolio control and analysis",
+    "Description": "An borrower is a legal entity that develops, registers and sells securities to finance its operations. Borrowers may be corporations, investment trusts, or domestic or foreign governments"
+  },
+  {
+    "unit": 4,
+    "Title": "Investment in bonds",
+    "Type": "Assets analysis",
+    "Description": "Stock  a security that represents the ownership of a fraction of the issuing corporation."
+  },
+  {
+    "unit": 4,
+    "Title": "Investment in bonds",
+    "Type": "Portfolio control and analysis",
+    "Description": "Bond is debt instrument issued by a government, corporation or other entity to finance and expand their operations."
+  }
+]
